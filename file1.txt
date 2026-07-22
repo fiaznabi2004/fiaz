@@ -1,4 +1,3 @@
-bgbriugfro
 Git rebase is a way to move or combine a sequence of commits onto a new base commit. It's often used as an alternative to merging when you want a cleaner, linear project history.
 
 git rebase main  => This rewrites your feature branch's commits as if you'd started working from the latest main.
