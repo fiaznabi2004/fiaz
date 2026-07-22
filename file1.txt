@@ -31,3 +31,14 @@ Replays D, E, F one at a time on top of C, creating new commits (D', E', F') wit
 git rebase <base-branch>
 
 This takes the commits from your current branch and replays them on top of <base-branch>.
+
+
+if conflict happens:
+# fix the conflicting files, then:
+git add <file>
+git rebase --continue
+
+# or bail out entirely:
+git rebase --abort
+
+rebase cant happen on uncommitted changes
