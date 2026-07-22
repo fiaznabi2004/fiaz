@@ -25,3 +25,10 @@ Finds the common ancestor of feature and main (commit A).
 Temporarily sets aside the commits unique to feature (D, E, F) — essentially saving them as patches (diffs).
 Moves feature's starting point to the tip of main (commit C).
 Replays D, E, F one at a time on top of C, creating new commits (D', E', F') with new hashes, since their parent has changed.
+
+
+
+
+git rebase <base-branch>
+
+This takes the commits from your current branch and replays them on top of <base-branch>.
