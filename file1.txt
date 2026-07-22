@@ -1,1 +1,27 @@
 bgbriugfro
+Git rebase is a way to move or combine a sequence of commits onto a new base commit. It's often used as an alternative to merging when you want a cleaner, linear project history.
+
+git rebase main  => This rewrites your feature branch's commits as if you'd started working from the latest main.
+
+Rebase rewrites commit history (new commit hashes), so avoid rebasing commits that others have already pulled/based work on — it can cause painful conflicts for collaborators.
+git pull --rebase is a common pattern to keep history linear when pulling from a shared branch.
+Merge vs. rebase is mostly a style/workflow choice: merge preserves true history with a merge commit; rebase creates a cleaner, linear history but rewrites commits.
+
+Git rebase takes a series of commits and re-applies them, one by one, on top of a different starting point (the "base"). It's literally re-basing your work — changing which commit your branch's history builds from.
+
+from :
+A---B---C  (main)
+       \
+        D---E---F  (feature)
+
+
+to:
+A---B---C  (main)
+               \
+                D'---E'---F'  (feature)
+
+
+Finds the common ancestor of feature and main (commit A).
+Temporarily sets aside the commits unique to feature (D, E, F) — essentially saving them as patches (diffs).
+Moves feature's starting point to the tip of main (commit C).
+Replays D, E, F one at a time on top of C, creating new commits (D', E', F') with new hashes, since their parent has changed.
