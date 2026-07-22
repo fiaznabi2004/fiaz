@@ -42,3 +42,9 @@ git rebase --continue
 git rebase --abort
 
 rebase cant happen on uncommitted changes
+
+rebase probs  when done->
+Why this happens — a few common scenarios:
+
+You already merged or rebased recently, and no new commits have been added to master since then.
+You're rebasing in the wrong direction. Maybe you meant:
