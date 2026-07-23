@@ -1,5 +1,17 @@
-twodddd112
-my name is fiaz
+the standard workflow for contributing to a project you don't have write access to. Here's the full picture:
 
-get a life 2025
-my life
+Fork — creates your own copy of the repo under your GitHub account
+Clone — pull that fork down to your local machine (or a working directory)
+Branch (often skipped for tiny changes, but good practice) — create a new branch for your change instead of committing to main
+Make changes — edit code, add features, fix bugs
+Commit — save your changes locally with a message describing what you did
+Push — send your commits up to your fork on GitHub
+Compare & pull request — GitHub detects your fork has new commits and offers a "Compare & pull request" button, which diffs your branch against the original repo's branch
+Add title & description — explain what the change does and why (some projects have a PR template you're expected to fill in)
+Create pull request — submits it for the maintainers to review, comment on, request changes, and eventually merge
+
+A few extra notes worth knowing:
+
+If the original repo updates while you're working, you'll want to sync your fork (pull upstream changes) before or during your PR to avoid conflicts.
+Many projects expect you to work on a feature branch, not main, so multiple contributions don't collide.
+Good PR etiquette: small, focused changes; clear commit messages; following the project's CONTRIBUTING.md if it has one
