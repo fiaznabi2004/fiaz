@@ -54,3 +54,6 @@ finally,
 
 Rebase rewrites your branch's history so it looks like you built your work on top of the newest commits, instead of the old ones — giving you a clean, straight-line history instead of a tangled one.
 Only rebase commits that are local/unshared. If others already have those commits, rebasing rewrites history under them — causing conflicts. For shared branches, use merge instead.
+
+
+we should learn git
